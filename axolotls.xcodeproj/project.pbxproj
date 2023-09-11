@@ -7,71 +7,137 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A00A69229906AAD00B9F619 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A00A69129906AAD00B9F619 /* main.cpp */; };
-		3A00A69A29906C6300B9F619 /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00A69929906C6300B9F619 /* libraylib.a */; };
+		3AE0DC612AA8FC5B0045B1BF /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0DC602AA8FC5B0045B1BF /* ResourcePath.mm */; };
+		3AE0DC642AA8FC5B0045B1BF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0DC632AA8FC5B0045B1BF /* main.cpp */; };
+		3AE0DC672AA8FC5B0045B1BF /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0DC662AA8FC5B0045B1BF /* background.jpg */; };
+		3AE0DC692AA8FC5B0045B1BF /* doodle_pop.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0DC682AA8FC5B0045B1BF /* doodle_pop.ogg */; };
+		3AE0DC6B2AA8FC5B0045B1BF /* tuffy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0DC6A2AA8FC5B0045B1BF /* tuffy.ttf */; };
+		3AE0DC6D2AA8FC5B0045B1BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0DC6C2AA8FC5B0045B1BF /* icon.png */; };
+		3AE0DC782AA8FCA80045B1BF /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC722AA8FCA70045B1BF /* sfml-graphics.framework */; };
+		3AE0DC792AA8FCA80045B1BF /* sfml-graphics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC722AA8FCA70045B1BF /* sfml-graphics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AE0DC7A2AA8FCA80045B1BF /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC732AA8FCA70045B1BF /* sfml-system.framework */; };
+		3AE0DC7B2AA8FCA80045B1BF /* sfml-system.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC732AA8FCA70045B1BF /* sfml-system.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AE0DC7C2AA8FCA80045B1BF /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC742AA8FCA70045B1BF /* sfml-window.framework */; };
+		3AE0DC7D2AA8FCA80045B1BF /* sfml-window.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC742AA8FCA70045B1BF /* sfml-window.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AE0DC7E2AA8FCA80045B1BF /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC752AA8FCA70045B1BF /* sfml-network.framework */; };
+		3AE0DC7F2AA8FCA80045B1BF /* sfml-network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC752AA8FCA70045B1BF /* sfml-network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AE0DC802AA8FCA80045B1BF /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC762AA8FCA70045B1BF /* sfml-audio.framework */; };
+		3AE0DC812AA8FCA80045B1BF /* sfml-audio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC762AA8FCA70045B1BF /* sfml-audio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AE0DC822AA8FCA80045B1BF /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC772AA8FCA70045B1BF /* SFML.framework */; };
+		3AE0DC832AA8FCA80045B1BF /* SFML.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0DC772AA8FCA70045B1BF /* SFML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3A00A68C29906AAD00B9F619 /* CopyFiles */ = {
+		3AE0DC842AA8FCA80045B1BF /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
+				3AE0DC832AA8FCA80045B1BF /* SFML.framework in Embed Frameworks */,
+				3AE0DC792AA8FCA80045B1BF /* sfml-graphics.framework in Embed Frameworks */,
+				3AE0DC812AA8FCA80045B1BF /* sfml-audio.framework in Embed Frameworks */,
+				3AE0DC7B2AA8FCA80045B1BF /* sfml-system.framework in Embed Frameworks */,
+				3AE0DC7D2AA8FCA80045B1BF /* sfml-window.framework in Embed Frameworks */,
+				3AE0DC7F2AA8FCA80045B1BF /* sfml-network.framework in Embed Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3A00A68E29906AAD00B9F619 /* axolotls */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = axolotls; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A00A69129906AAD00B9F619 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		3A00A69929906C6300B9F619 /* libraylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraylib.a; path = ../../../../../opt/homebrew/Cellar/raylib/4.2.0/lib/libraylib.a; sourceTree = "<group>"; };
-		3A00A7622990717700B9F619 /* types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = types.h; sourceTree = "<group>"; };
+		3AE0DC5B2AA8FC5B0045B1BF /* ax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AE0DC5F2AA8FC5B0045B1BF /* axolotls-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "axolotls-Info.plist"; path = "../axolotls-Info.plist"; sourceTree = "<group>"; };
+		3AE0DC602AA8FC5B0045B1BF /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		3AE0DC622AA8FC5B0045B1BF /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		3AE0DC632AA8FC5B0045B1BF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3AE0DC662AA8FC5B0045B1BF /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../background.jpg; sourceTree = "<group>"; };
+		3AE0DC682AA8FC5B0045B1BF /* doodle_pop.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = doodle_pop.ogg; path = ../doodle_pop.ogg; sourceTree = "<group>"; };
+		3AE0DC6A2AA8FC5B0045B1BF /* tuffy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = tuffy.ttf; path = ../tuffy.ttf; sourceTree = "<group>"; };
+		3AE0DC6C2AA8FC5B0045B1BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		3AE0DC722AA8FCA70045B1BF /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
+		3AE0DC732AA8FCA70045B1BF /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "../../../../../Library/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
+		3AE0DC742AA8FCA70045B1BF /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "../../../../../Library/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
+		3AE0DC752AA8FCA70045B1BF /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../../../../Library/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
+		3AE0DC762AA8FCA70045B1BF /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../../../../Library/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
+		3AE0DC772AA8FCA70045B1BF /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = ../../../../../Library/Frameworks/SFML.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3A00A68B29906AAD00B9F619 /* Frameworks */ = {
+		3AE0DC572AA8FC5B0045B1BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A00A69A29906C6300B9F619 /* libraylib.a in Frameworks */,
+				3AE0DC822AA8FCA80045B1BF /* SFML.framework in Frameworks */,
+				3AE0DC782AA8FCA80045B1BF /* sfml-graphics.framework in Frameworks */,
+				3AE0DC802AA8FCA80045B1BF /* sfml-audio.framework in Frameworks */,
+				3AE0DC7A2AA8FCA80045B1BF /* sfml-system.framework in Frameworks */,
+				3AE0DC7C2AA8FCA80045B1BF /* sfml-window.framework in Frameworks */,
+				3AE0DC7E2AA8FCA80045B1BF /* sfml-network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A00A68529906AAD00B9F619 = {
+		3AE0DC512AA8FC5B0045B1BF = {
 			isa = PBXGroup;
 			children = (
-				3A00A69029906AAD00B9F619 /* axolotls */,
-				3A00A68F29906AAD00B9F619 /* Products */,
-				3A00A69829906C6200B9F619 /* Frameworks */,
+				3AE0DC5D2AA8FC5B0045B1BF /* axolotls */,
+				3AE0DC5C2AA8FC5B0045B1BF /* Products */,
+				3AE0DC712AA8FCA70045B1BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		3A00A68F29906AAD00B9F619 /* Products */ = {
+		3AE0DC5C2AA8FC5B0045B1BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A00A68E29906AAD00B9F619 /* axolotls */,
+				3AE0DC5B2AA8FC5B0045B1BF /* ax.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A00A69029906AAD00B9F619 /* axolotls */ = {
+		3AE0DC5D2AA8FC5B0045B1BF /* axolotls */ = {
 			isa = PBXGroup;
 			children = (
-				3A00A69129906AAD00B9F619 /* main.cpp */,
-				3A00A7622990717700B9F619 /* types.h */,
+				3AE0DC602AA8FC5B0045B1BF /* ResourcePath.mm */,
+				3AE0DC622AA8FC5B0045B1BF /* ResourcePath.hpp */,
+				3AE0DC632AA8FC5B0045B1BF /* main.cpp */,
+				3AE0DC652AA8FC5B0045B1BF /* Resources */,
+				3AE0DC5E2AA8FC5B0045B1BF /* Supporting Files */,
 			);
 			path = axolotls;
 			sourceTree = "<group>";
 		};
-		3A00A69829906C6200B9F619 /* Frameworks */ = {
+		3AE0DC5E2AA8FC5B0045B1BF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3A00A69929906C6300B9F619 /* libraylib.a */,
+				3AE0DC5F2AA8FC5B0045B1BF /* axolotls-Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AE0DC652AA8FC5B0045B1BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AE0DC662AA8FC5B0045B1BF /* background.jpg */,
+				3AE0DC682AA8FC5B0045B1BF /* doodle_pop.ogg */,
+				3AE0DC6A2AA8FC5B0045B1BF /* tuffy.ttf */,
+				3AE0DC6C2AA8FC5B0045B1BF /* icon.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3AE0DC712AA8FCA70045B1BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AE0DC762AA8FCA70045B1BF /* sfml-audio.framework */,
+				3AE0DC722AA8FCA70045B1BF /* sfml-graphics.framework */,
+				3AE0DC752AA8FCA70045B1BF /* sfml-network.framework */,
+				3AE0DC732AA8FCA70045B1BF /* sfml-system.framework */,
+				3AE0DC742AA8FCA70045B1BF /* sfml-window.framework */,
+				3AE0DC772AA8FCA70045B1BF /* SFML.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,13 +145,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A00A68D29906AAD00B9F619 /* axolotls */ = {
+		3AE0DC5A2AA8FC5B0045B1BF /* axolotls */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A00A69529906AAD00B9F619 /* Build configuration list for PBXNativeTarget "axolotls" */;
+			buildConfigurationList = 3AE0DC6E2AA8FC5B0045B1BF /* Build configuration list for PBXNativeTarget "axolotls" */;
 			buildPhases = (
-				3A00A68A29906AAD00B9F619 /* Sources */,
-				3A00A68B29906AAD00B9F619 /* Frameworks */,
-				3A00A68C29906AAD00B9F619 /* CopyFiles */,
+				3AE0DC562AA8FC5B0045B1BF /* Sources */,
+				3AE0DC572AA8FC5B0045B1BF /* Frameworks */,
+				3AE0DC582AA8FC5B0045B1BF /* Resources */,
+				3AE0DC592AA8FC5B0045B1BF /* ShellScript */,
+				3AE0DC842AA8FCA80045B1BF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -93,24 +161,25 @@
 			);
 			name = axolotls;
 			productName = axolotls;
-			productReference = 3A00A68E29906AAD00B9F619 /* axolotls */;
-			productType = "com.apple.product-type.tool";
+			productReference = 3AE0DC5B2AA8FC5B0045B1BF /* ax.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3A00A68629906AAD00B9F619 /* Project object */ = {
+		3AE0DC522AA8FC5B0045B1BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = kam;
 				TargetAttributes = {
-					3A00A68D29906AAD00B9F619 = {
-						CreatedOnToolsVersion = 14.2;
+					3AE0DC5A2AA8FC5B0045B1BF = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 3A00A68929906AAD00B9F619 /* Build configuration list for PBXProject "axolotls" */;
+			buildConfigurationList = 3AE0DC552AA8FC5B0045B1BF /* Build configuration list for PBXProject "axolotls" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,197 +187,133 @@
 				en,
 				Base,
 			);
-			mainGroup = 3A00A68529906AAD00B9F619;
-			productRefGroup = 3A00A68F29906AAD00B9F619 /* Products */;
+			mainGroup = 3AE0DC512AA8FC5B0045B1BF;
+			productRefGroup = 3AE0DC5C2AA8FC5B0045B1BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A00A68D29906AAD00B9F619 /* axolotls */,
+				3AE0DC5A2AA8FC5B0045B1BF /* axolotls */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3AE0DC582AA8FC5B0045B1BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE0DC6D2AA8FC5B0045B1BF /* icon.png in Resources */,
+				3AE0DC692AA8FC5B0045B1BF /* doodle_pop.ogg in Resources */,
+				3AE0DC672AA8FC5B0045B1BF /* background.jpg in Resources */,
+				3AE0DC6B2AA8FC5B0045B1BF /* tuffy.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AE0DC592AA8FC5B0045B1BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# SETTINGS\nSFML_DEPENDENCIES_INSTALL_PREFIX=\"@SFML_DEPENDENCIES_INSTALL_PREFIX@\"\nCMAKE_INSTALL_FRAMEWORK_PREFIX=\"@CMAKE_INSTALL_PREFIX@\"\nCMAKE_INSTALL_LIB_PREFIX=\"@CMAKE_INSTALL_PREFIX@/lib\"\nFRAMEWORKS_FULL_PATH=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert: not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"$CMAKE_INSTALL_FRAMEWORK_PREFIX/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\" frameworks too\n            for f in \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\"\n            do\n                copy \"$SFML_DEPENDENCIES_INSTALL_PREFIX/$f.framework\" \"$dest/$f.framework\"\n            done\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            copy \"$SFML_DEPENDENCIES_INSTALL_PREFIX/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		3A00A68A29906AAD00B9F619 /* Sources */ = {
+		3AE0DC562AA8FC5B0045B1BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A00A69229906AAD00B9F619 /* main.cpp in Sources */,
+				3AE0DC642AA8FC5B0045B1BF /* main.cpp in Sources */,
+				3AE0DC612AA8FC5B0045B1BF /* ResourcePath.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3A00A69329906AAD00B9F619 /* Debug */ = {
+		3AE0DC532AA8FC5B0045B1BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = c11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					/opt/homebrew/Cellar/raylib/4.2.0/include,
-					"Vendor/raylib-cpp/include",
-				);
-				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		3A00A69429906AAD00B9F619 /* Release */ = {
+		3AE0DC542AA8FC5B0045B1BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = c11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					/opt/homebrew/Cellar/raylib/4.2.0/include,
-					"Vendor/raylib-cpp/include",
-				);
-				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				COPY_PHASE_STRIP = YES;
 			};
 			name = Release;
 		};
-		3A00A69629906AAD00B9F619 /* Debug */ = {
+		3AE0DC6F2AA8FC5B0045B1BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				LIBRARY_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/opt/homebrew/Cellar/raylib/4.2.0/lib,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				INFOPLIST_FILE = "axolotls/axolotls-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ax;
 			};
 			name = Debug;
 		};
-		3A00A69729906AAD00B9F619 /* Release */ = {
+		3AE0DC702AA8FC5B0045B1BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				LIBRARY_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/opt/homebrew/Cellar/raylib/4.2.0/lib,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				INFOPLIST_FILE = "axolotls/axolotls-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ax;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A00A68929906AAD00B9F619 /* Build configuration list for PBXProject "axolotls" */ = {
+		3AE0DC552AA8FC5B0045B1BF /* Build configuration list for PBXProject "axolotls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A00A69329906AAD00B9F619 /* Debug */,
-				3A00A69429906AAD00B9F619 /* Release */,
+				3AE0DC532AA8FC5B0045B1BF /* Debug */,
+				3AE0DC542AA8FC5B0045B1BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A00A69529906AAD00B9F619 /* Build configuration list for PBXNativeTarget "axolotls" */ = {
+		3AE0DC6E2AA8FC5B0045B1BF /* Build configuration list for PBXNativeTarget "axolotls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A00A69629906AAD00B9F619 /* Debug */,
-				3A00A69729906AAD00B9F619 /* Release */,
+				3AE0DC6F2AA8FC5B0045B1BF /* Debug */,
+				3AE0DC702AA8FC5B0045B1BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3A00A68629906AAD00B9F619 /* Project object */;
+	rootObject = 3AE0DC522AA8FC5B0045B1BF /* Project object */;
 }
