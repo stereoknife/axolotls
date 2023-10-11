@@ -25,6 +25,10 @@ using s64 = int64_t;
 using f32 = float;
 using f64 = double;
 
+using vec2 = sf::Vector2f;
+using vec3 = sf::Vector3f;
+
 using TextureManager = ResourceManager<sf::Texture, u32>;
+using ImageManager = ResourceManager<sf::Image, u32>;
 
 #endif /* types_h */

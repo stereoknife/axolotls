@@ -13,6 +13,7 @@
 #include <SFML/Graphics.hpp>
 #include "types.h"
 #include "resource_manager.hpp"
+#include "character.hpp"
 
 class Game {
 public:
@@ -20,22 +21,24 @@ public:
     void                run();
     
 private:
-    void                events();
+    void                init();
+    
     void                update(sf::Time dt);
     void                draw();
+    
+    void                events();
     void                input(sf::Keyboard::Key key, bool isPressed);
     
-    sf::RenderWindow    mWindow;
-    sf::Image           mIcon;
-    sf::Time            mFdt;
-    TextureManager      mTextureManager;
+    sf::RenderWindow    m_window;
+    sf::Time            m_fdt;
+    TextureManager      m_texture_manager;
+    ImageManager        m_image_manager;
     
     // WIP stuff that is here for now
-    sf::Sprite          mCharacterSprite;
-    sf::Texture         mCharacterTexture;
-    f32                 mPlayerSpeed;
-    bool                mMovingLeft;
-    bool                mMovingRight;
+    SceneNode           m_scene;
+    f32                 m_player_speed;
+    bool                m_moving_left;
+    bool                m_moving_right;
 };
 
 #endif /* game_hpp */

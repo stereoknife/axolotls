@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A5C19622AB6E487005DECB5 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C19602AB6E487005DECB5 /* game.cpp */; };
 		3A6612872AD6F0C700D36B63 /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A6612862AD6F0C700D36B63 /* character.png */; };
+		3A6612902AD71C1200D36B63 /* scene_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66128E2AD71C1200D36B63 /* scene_node.cpp */; };
+		3A6612942AD7296B00D36B63 /* character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A6612922AD7296B00D36B63 /* character.cpp */; };
 		3ABC5C712AAF66EF00A7A0D5 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ABC5C6D2AAF66EF00A7A0D5 /* background.jpg */; };
 		3ABC5C722AAF66EF00A7A0D5 /* tuffy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3ABC5C6E2AAF66EF00A7A0D5 /* tuffy.ttf */; };
 		3ABC5C732AAF66EF00A7A0D5 /* doodle_pop.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 3ABC5C6F2AAF66EF00A7A0D5 /* doodle_pop.ogg */; };
@@ -54,6 +56,10 @@
 		3A5C19632AB6E513005DECB5 /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
 		3A6612862AD6F0C700D36B63 /* character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character.png; sourceTree = "<group>"; };
 		3A6612892AD6F1D000D36B63 /* resource_manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = resource_manager.hpp; sourceTree = "<group>"; };
+		3A66128E2AD71C1200D36B63 /* scene_node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scene_node.cpp; sourceTree = "<group>"; };
+		3A66128F2AD71C1200D36B63 /* scene_node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = scene_node.hpp; sourceTree = "<group>"; };
+		3A6612922AD7296B00D36B63 /* character.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = character.cpp; sourceTree = "<group>"; };
+		3A6612932AD7296B00D36B63 /* character.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = character.hpp; sourceTree = "<group>"; };
 		3ABC5C6D2AAF66EF00A7A0D5 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		3ABC5C6E2AAF66EF00A7A0D5 /* tuffy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tuffy.ttf; sourceTree = "<group>"; };
 		3ABC5C6F2AAF66EF00A7A0D5 /* doodle_pop.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = doodle_pop.ogg; sourceTree = "<group>"; };
@@ -99,6 +105,17 @@
 			path = util;
 			sourceTree = "<group>";
 		};
+		3A6612912AD728A700D36B63 /* actors */ = {
+			isa = PBXGroup;
+			children = (
+				3A66128E2AD71C1200D36B63 /* scene_node.cpp */,
+				3A66128F2AD71C1200D36B63 /* scene_node.hpp */,
+				3A6612922AD7296B00D36B63 /* character.cpp */,
+				3A6612932AD7296B00D36B63 /* character.hpp */,
+			);
+			path = actors;
+			sourceTree = "<group>";
+		};
 		3AE0DC512AA8FC5B0045B1BF = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +140,7 @@
 				3AE0DC652AA8FC5B0045B1BF /* Resources */,
 				3AE0DC5E2AA8FC5B0045B1BF /* Supporting Files */,
 				3A6612842AD6E9BE00D36B63 /* util */,
+				3A6612912AD728A700D36B63 /* actors */,
 				3AE0DC632AA8FC5B0045B1BF /* main.cpp */,
 				3A5C19602AB6E487005DECB5 /* game.cpp */,
 				3A5C19612AB6E487005DECB5 /* game.hpp */,
@@ -259,8 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6612942AD7296B00D36B63 /* character.cpp in Sources */,
 				3AE0DC642AA8FC5B0045B1BF /* main.cpp in Sources */,
 				3AE0DC612AA8FC5B0045B1BF /* ResourcePath.mm in Sources */,
+				3A6612902AD71C1200D36B63 /* scene_node.cpp in Sources */,
 				3A5C19622AB6E487005DECB5 /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

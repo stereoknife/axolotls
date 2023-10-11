@@ -26,7 +26,7 @@ public:
     
 private:
     using Ptr = std::unique_ptr<Resource>;
-    std::unordered_map<Identifier, Ptr> mTextureMap;
+    std::unordered_map<Identifier, Ptr> m_resource_map;
 };
 
 
@@ -34,38 +34,38 @@ private:
 
 template <typename Resource, typename Identifier>
 void ResourceManager<Resource, Identifier>::load(Identifier id, const std::string& filename) {
-    auto texture = std::make_unique<sf::Texture>();
+    auto resource = std::make_unique<Resource>();
     
-    if (!texture->loadFromFile(filename))
+    if (!resource->loadFromFile(filename))
         throw std::runtime_error("ResourceManager::load - Failed to load " + filename);
     
-    auto inserted = mTextureMap.insert({id, std::move(texture)});
+    auto inserted = m_resource_map.insert({id, std::move(resource)});
     assert(inserted.second);
 }
 
 template <typename Resource, typename Identifier>
 template <typename Param>
 void ResourceManager<Resource, Identifier>::load(Identifier id, const std::string& filename, const Param& secondParam) {
-    auto texture = std::make_unique<sf::Texture>();
+    auto resource = std::make_unique<Resource>();
     
-    if (!texture->loadFromFile(filename, secondParam))
+    if (!resource->loadFromFile(filename, secondParam))
         throw std::runtime_error("ResourceManager::load - Failed to load " + filename);
     
-    auto inserted = mTextureMap.insert({id, std::move(texture)});
+    auto inserted = m_resource_map.insert({id, std::move(resource)});
     assert(inserted.second);
 }
 
 template <typename Resource, typename Identifier>
 Resource& ResourceManager<Resource, Identifier>::get(Identifier id) {
-    auto found = mTextureMap.find(id);
-    assert(found != mTextureMap.end());
+    auto found = m_resource_map.find(id);
+    assert(found != m_resource_map.end());
     return *found->second;
 }
 
 template <typename Resource, typename Identifier>
 const Resource& ResourceManager<Resource, Identifier>::get(Identifier id) const {
-    auto found = mTextureMap.find(id);
-    assert(found != mTextureMap.end());
+    auto found = m_resource_map.find(id);
+    assert(found != m_resource_map.end());
     return *found->second;
 }
 

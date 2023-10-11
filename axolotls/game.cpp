@@ -10,25 +10,20 @@
 #include "ResourcePath.hpp"
 
 Game::Game() :
-    mWindow{sf::VideoMode(800, 600), "SFML window"},
-    mIcon{},
-    mCharacterTexture{},
-    mCharacterSprite{},
-    mTextureManager{}
+    m_window{sf::VideoMode(800, 600), "SFML window"},
+    m_scene{},
+    m_texture_manager{},
+    m_image_manager{}
 {
-    if (!mIcon.loadFromFile(resourcePath() / "icon.png"))
-        return EXIT_FAILURE;
+    m_image_manager.load(0, resourcePath() / "icon.png");
+    sf::Image icon = m_image_manager.get(0);
+    m_window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
     
-    mTextureManager.load(0, resourcePath() / "character.png");
+    m_fdt = sf::seconds(1.f / 60.f);
+    m_player_speed = 50.f;
     
-    mWindow.setIcon(mIcon.getSize().x, mIcon.getSize().y, mIcon.getPixelsPtr());
-    mCharacterSprite.setTexture(mTextureManager.get(0));
-    mCharacterSprite.setPosition(100.f, 100.f);
-    mFdt = sf::seconds(1.f / 60.f);
-    mPlayerSpeed = 50.f;
-    
-    mMovingLeft = false;
-    mMovingRight = false;
+    m_moving_left = false;
+    m_moving_right = false;
 }
 
 void Game::run() {
@@ -37,37 +32,45 @@ void Game::run() {
     sf::Time dt = sf::Time::Zero;
     
     // Start the game loop
-    while (mWindow.isOpen())
+    while (m_window.isOpen())
     {
         events();
         
         // Process updates every 1/60 seconds
         dt += clock.restart();
-        while (dt > mFdt) {
-            dt -= mFdt;
+        while (dt > m_fdt) {
+            dt -= m_fdt;
             
             events();
-            update(mFdt);
+            update(m_fdt);
         }
 
         // Clear screen
-        mWindow.clear();
+        m_window.clear();
 
         draw();
 
         // Update the window
-        mWindow.display();
+        m_window.display();
     }
+}
+
+void Game::init() {
+    m_texture_manager.load(0, resourcePath() / "character.png");
+    
+    auto character = std::make_unique<Character>(m_texture_manager);
+    character->setPosition(100, 100);
+    m_scene.attach_child(std::move(character));
 }
 
 void Game::events() {
     // Process events
-    for (sf::Event event; mWindow.pollEvent(event);)
+    for (sf::Event event; m_window.pollEvent(event);)
     {
         switch (event.type) {
             // Close window: exit
             case sf::Event::Closed:
-                mWindow.close();
+                m_window.close();
                 break;
                 
             case sf::Event::KeyPressed:
@@ -86,21 +89,21 @@ void Game::events() {
 
 void Game::update(sf::Time dt) {
     sf::Vector2f movement(0.f, 0.f);
-    if (mMovingLeft)
-        movement.x -= mPlayerSpeed;
-    if (mMovingRight)
-        movement.x += mPlayerSpeed;
+    if (m_moving_left)
+        movement.x -= m_player_speed;
+    if (m_moving_right)
+        movement.x += m_player_speed;
     
-    mCharacterSprite.move(movement * dt.asSeconds());
+    //m_character_sprite.move(movement * dt.asSeconds());
 }
 
 void Game::draw() {
-    mWindow.draw(mCharacterSprite);
+    m_window.draw(m_scene);
 }
 
 void Game::input(sf::Keyboard::Key key, bool isPressed) {
     if (key == sf::Keyboard::A)
-        mMovingLeft = isPressed;
+        m_moving_left = isPressed;
     else if (key == sf::Keyboard::D)
-        mMovingRight = isPressed;
+        m_moving_right = isPressed;
 }
