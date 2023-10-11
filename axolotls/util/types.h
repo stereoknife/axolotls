@@ -10,6 +10,7 @@
 #define types_h
 
 #include <stdint.h>
+#include "resource_manager.hpp"
 
 using u8 = uint8_t;
 using u16 = uint16_t;
@@ -23,5 +24,7 @@ using s64 = int64_t;
 
 using f32 = float;
 using f64 = double;
+
+using TextureManager = ResourceManager<sf::Texture, u32>;
 
 #endif /* types_h */

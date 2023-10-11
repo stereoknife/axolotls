@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 #include <SFML/Graphics.hpp>
+#include "types.h"
+#include "resource_manager.hpp"
 
 class Game {
 public:
@@ -18,14 +20,22 @@ public:
     void                run();
     
 private:
-    void                input();
-    void                update();
+    void                events();
+    void                update(sf::Time dt);
     void                draw();
+    void                input(sf::Keyboard::Key key, bool isPressed);
     
-    sf::RenderWindow    window;
-    sf::Image           icon;
+    sf::RenderWindow    mWindow;
+    sf::Image           mIcon;
+    sf::Time            mFdt;
+    TextureManager      mTextureManager;
     
-    sf::Time            fdt;
+    // WIP stuff that is here for now
+    sf::Sprite          mCharacterSprite;
+    sf::Texture         mCharacterTexture;
+    f32                 mPlayerSpeed;
+    bool                mMovingLeft;
+    bool                mMovingRight;
 };
 
 #endif /* game_hpp */

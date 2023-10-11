@@ -10,15 +10,25 @@
 #include "ResourcePath.hpp"
 
 Game::Game() :
-    window{sf::VideoMode(800, 600), "SFML window"},
-    icon{}
+    mWindow{sf::VideoMode(800, 600), "SFML window"},
+    mIcon{},
+    mCharacterTexture{},
+    mCharacterSprite{},
+    mTextureManager{}
 {
-    if (!icon.loadFromFile(resourcePath() / "icon.png"))
-    {
+    if (!mIcon.loadFromFile(resourcePath() / "icon.png"))
         return EXIT_FAILURE;
-    }
-    window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
-    fdt = sf::seconds(1.f / 60.f);
+    
+    mTextureManager.load(0, resourcePath() / "character.png");
+    
+    mWindow.setIcon(mIcon.getSize().x, mIcon.getSize().y, mIcon.getPixelsPtr());
+    mCharacterSprite.setTexture(mTextureManager.get(0));
+    mCharacterSprite.setPosition(100.f, 100.f);
+    mFdt = sf::seconds(1.f / 60.f);
+    mPlayerSpeed = 50.f;
+    
+    mMovingLeft = false;
+    mMovingRight = false;
 }
 
 void Game::run() {
@@ -27,51 +37,70 @@ void Game::run() {
     sf::Time dt = sf::Time::Zero;
     
     // Start the game loop
-    while (window.isOpen())
+    while (mWindow.isOpen())
     {
-        input();
+        events();
         
         // Process updates every 1/60 seconds
         dt += clock.restart();
-        while (dt > fdt) {
-            dt -= fdt;
+        while (dt > mFdt) {
+            dt -= mFdt;
             
-            input();
-            update();
+            events();
+            update(mFdt);
         }
 
         // Clear screen
-        window.clear();
+        mWindow.clear();
 
         draw();
 
         // Update the window
-        window.display();
+        mWindow.display();
     }
 }
 
-void Game::input() {
+void Game::events() {
     // Process events
-    for (sf::Event event; window.pollEvent(event);)
+    for (sf::Event event; mWindow.pollEvent(event);)
     {
-        // Close window: exit
-        if (event.type == sf::Event::Closed)
-        {
-            window.close();
-        }
-
-        // Escape pressed: exit
-        if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
-        {
-            window.close();
+        switch (event.type) {
+            // Close window: exit
+            case sf::Event::Closed:
+                mWindow.close();
+                break;
+                
+            case sf::Event::KeyPressed:
+                input(event.key.code, true);
+                break;
+                
+            case sf::Event::KeyReleased:
+                input(event.key.code, false);
+                break;
+                
+            default:
+                break;
         }
     }
 }
 
-void Game::update() {
+void Game::update(sf::Time dt) {
+    sf::Vector2f movement(0.f, 0.f);
+    if (mMovingLeft)
+        movement.x -= mPlayerSpeed;
+    if (mMovingRight)
+        movement.x += mPlayerSpeed;
     
+    mCharacterSprite.move(movement * dt.asSeconds());
 }
 
 void Game::draw() {
-    
+    mWindow.draw(mCharacterSprite);
+}
+
+void Game::input(sf::Keyboard::Key key, bool isPressed) {
+    if (key == sf::Keyboard::A)
+        mMovingLeft = isPressed;
+    else if (key == sf::Keyboard::D)
+        mMovingRight = isPressed;
 }

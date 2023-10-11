@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A5C19622AB6E487005DECB5 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C19602AB6E487005DECB5 /* game.cpp */; };
+		3A6612872AD6F0C700D36B63 /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A6612862AD6F0C700D36B63 /* character.png */; };
 		3ABC5C712AAF66EF00A7A0D5 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ABC5C6D2AAF66EF00A7A0D5 /* background.jpg */; };
 		3ABC5C722AAF66EF00A7A0D5 /* tuffy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3ABC5C6E2AAF66EF00A7A0D5 /* tuffy.ttf */; };
 		3ABC5C732AAF66EF00A7A0D5 /* doodle_pop.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 3ABC5C6F2AAF66EF00A7A0D5 /* doodle_pop.ogg */; };
@@ -51,6 +52,8 @@
 		3A5C19602AB6E487005DECB5 /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
 		3A5C19612AB6E487005DECB5 /* game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = game.hpp; sourceTree = "<group>"; };
 		3A5C19632AB6E513005DECB5 /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		3A6612862AD6F0C700D36B63 /* character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character.png; sourceTree = "<group>"; };
+		3A6612892AD6F1D000D36B63 /* resource_manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = resource_manager.hpp; sourceTree = "<group>"; };
 		3ABC5C6D2AAF66EF00A7A0D5 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		3ABC5C6E2AAF66EF00A7A0D5 /* tuffy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tuffy.ttf; sourceTree = "<group>"; };
 		3ABC5C6F2AAF66EF00A7A0D5 /* doodle_pop.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = doodle_pop.ogg; sourceTree = "<group>"; };
@@ -123,6 +126,7 @@
 				3AE0DC632AA8FC5B0045B1BF /* main.cpp */,
 				3A5C19602AB6E487005DECB5 /* game.cpp */,
 				3A5C19612AB6E487005DECB5 /* game.hpp */,
+				3A6612892AD6F1D000D36B63 /* resource_manager.hpp */,
 			);
 			path = axolotls;
 			sourceTree = "<group>";
@@ -138,6 +142,7 @@
 		3AE0DC652AA8FC5B0045B1BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3A6612862AD6F0C700D36B63 /* character.png */,
 				3ABC5C6D2AAF66EF00A7A0D5 /* background.jpg */,
 				3ABC5C6F2AAF66EF00A7A0D5 /* doodle_pop.ogg */,
 				3ABC5C702AAF66EF00A7A0D5 /* icon.png */,
@@ -221,6 +226,7 @@
 			files = (
 				3ABC5C742AAF66EF00A7A0D5 /* icon.png in Resources */,
 				3ABC5C732AAF66EF00A7A0D5 /* doodle_pop.ogg in Resources */,
+				3A6612872AD6F0C700D36B63 /* character.png in Resources */,
 				3ABC5C712AAF66EF00A7A0D5 /* background.jpg in Resources */,
 				3ABC5C722AAF66EF00A7A0D5 /* tuffy.ttf in Resources */,
 			);
