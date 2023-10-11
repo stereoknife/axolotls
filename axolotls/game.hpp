@@ -9,24 +9,23 @@
 #ifndef game_hpp
 #define game_hpp
 
-#include "types.h"
 #include <stdio.h>
 #include <SFML/Graphics.hpp>
 
 class Game {
 public:
-    Game();
-    void run();
+                        Game();
+    void                run();
     
 private:
-    void input();
-    void update();
-    void draw();
+    void                input();
+    void                update();
+    void                draw();
     
-    sf::Time fdt;
+    sf::RenderWindow    window;
+    sf::Image           icon;
     
-    sf::RenderWindow window;
-    sf::Image icon;
+    sf::Time            fdt;
 };
 
 #endif /* game_hpp */
