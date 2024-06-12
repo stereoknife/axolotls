@@ -1,3 +1,0 @@
-/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-subbuild/CMakeFiles/imgui-sfml-populate.dir
-/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-subbuild/CMakeFiles/ALL_BUILD.dir
-/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-subbuild/CMakeFiles/ZERO_CHECK.dir

@@ -1,7 +1,0 @@
-Target dependency graph (3 targets)
-Target 'ALL_BUILD' in project 'imgui-sfml-populate'
-➜ Explicit dependency on target 'imgui-sfml-populate' in project 'imgui-sfml-populate'
-➜ Explicit dependency on target 'ZERO_CHECK' in project 'imgui-sfml-populate'
-Target 'imgui-sfml-populate' in project 'imgui-sfml-populate'
-➜ Explicit dependency on target 'ZERO_CHECK' in project 'imgui-sfml-populate'
-Target 'ZERO_CHECK' in project 'imgui-sfml-populate' (no dependencies)

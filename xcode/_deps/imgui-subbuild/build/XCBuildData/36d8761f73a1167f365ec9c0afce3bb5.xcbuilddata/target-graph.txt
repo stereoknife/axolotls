@@ -1,7 +1,0 @@
-Target dependency graph (3 targets)
-Target 'ALL_BUILD' in project 'imgui-populate'
-➜ Explicit dependency on target 'imgui-populate' in project 'imgui-populate'
-➜ Explicit dependency on target 'ZERO_CHECK' in project 'imgui-populate'
-Target 'imgui-populate' in project 'imgui-populate'
-➜ Explicit dependency on target 'ZERO_CHECK' in project 'imgui-populate'
-Target 'ZERO_CHECK' in project 'imgui-populate' (no dependencies)
