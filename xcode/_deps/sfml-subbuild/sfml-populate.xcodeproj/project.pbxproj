@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2433620B904A477F9307B7D7 /* sfml-populate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 34663BF4226D40B7819A69E7 /* Build configuration list for PBXAggregateTarget "sfml-populate" */;
+			buildPhases = (
+				4CD8DC26B9198EE970A6B844 /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-mkdir */,
+				DB75E712E37F6FAE3D39C73D /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-download */,
+				FE2D2DD5D63286F3FDB7BB31 /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-update */,
+				717FFDE30F739552B4097F61 /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-patch */,
+				30A807509B0C83DFECB9A521 /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-configure */,
+				4D065694B6D03C2EE7058A10 /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-build */,
+				2C34362A187374B03B99130F /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-install */,
+				13E014739B064125C0CFC8FE /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-test */,
+				9BCCB05330B1637F9A8F2A83 /* Generate CMakeFiles/Debug/sfml-populate-complete */,
+				E076002A4560F5B739A3A757 /* Generate CMakeFiles/sfml-populate */,
+			);
+			dependencies = (
+				841B7D8534EE4B49A3E7946A /* PBXTargetDependency */,
+			);
+			name = "sfml-populate";
+			productName = "sfml-populate";
+		};
+		32686F285075448DB85A30F6 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4943D30C577948B99AC1F029 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				DBB91C5BD663ED3C2B16630A /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				CF879362AD6E4929997591AD /* PBXTargetDependency */,
+				C002E6D6F8E2488F91A0E0A5 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		BC9926F0F695456BBD95FFA9 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 23F3B2DAE53D49C18E5C1C5A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				265A8D037864CF711D095C07 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildStyle section */
+		B28A972FDFF94943AB0DA913 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		2451724AC1B240CBB53752B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21D32AC75D4443C98313EC42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9926F0F695456BBD95FFA9;
+			remoteInfo = ZERO_CHECK;
+		};
+		6ED6A666F2154D63AB656C9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21D32AC75D4443C98313EC42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9926F0F695456BBD95FFA9;
+			remoteInfo = ZERO_CHECK;
+		};
+		E4CE48BDA0E648248A44CABF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21D32AC75D4443C98313EC42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2433620B904A477F9307B7D7;
+			remoteInfo = "sfml-populate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BC54C9F4BE147F5BC5CADFA /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D5557726F7324CD49BD175D3 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		273136345EA84C679D284DF8 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2782085372D64044AAD39DFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A98A634C2B34905BC7CEC9B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		48B0B80079C6446E8AE8096B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				273136345EA84C679D284DF8 /* CMake Rules */,
+				1BC54C9F4BE147F5BC5CADFA /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		5B48F98C46A144F68E0B9962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A284EAB2D4854FB3B6C62812 /* sfml-populate */ = {
+			isa = PBXGroup;
+			children = (
+				3A98A634C2B34905BC7CEC9B /* CMake Rules */,
+				D5557726F7324CD49BD175D3 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeLists.txt */,
+			);
+			name = "sfml-populate";
+			sourceTree = "<group>";
+		};
+		B8A152A4A2D8487AB310A410 = {
+			isa = PBXGroup;
+			children = (
+				EEF266184DD74FCF91B52960 /* ExternalProjectTargets */,
+				48B0B80079C6446E8AE8096B /* ALL_BUILD */,
+				2782085372D64044AAD39DFB /* Products */,
+				5B48F98C46A144F68E0B9962 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DAC0FAFA537F4D68A44E0A3F /* sfml-populate */ = {
+			isa = PBXGroup;
+			children = (
+				A284EAB2D4854FB3B6C62812 /* sfml-populate */,
+			);
+			name = "sfml-populate";
+			sourceTree = "<group>";
+		};
+		EEF266184DD74FCF91B52960 /* ExternalProjectTargets */ = {
+			isa = PBXGroup;
+			children = (
+				DAC0FAFA537F4D68A44E0A3F /* sfml-populate */,
+			);
+			name = ExternalProjectTargets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		21D32AC75D4443C98313EC42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+			};
+			buildConfigurationList = 6BA159B520AE4E76A4BBA53A /* Build configuration list for PBXProject "sfml-populate" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				B28A972FDFF94943AB0DA913 /* Debug */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = B8A152A4A2D8487AB310A410;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				32686F285075448DB85A30F6 /* ALL_BUILD */,
+				BC9926F0F695456BBD95FFA9 /* ZERO_CHECK */,
+				2433620B904A477F9307B7D7 /* sfml-populate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13E014739B064125C0CFC8FE /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-test */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-install"			);
+			name = "Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-test";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-test"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-build
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E echo_append
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E touch /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-test
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		265A8D037864CF711D095C07 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild
+  make -f /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		2C34362A187374B03B99130F /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-install */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-build"			);
+			name = "Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-install";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-install"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-build
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E echo_append
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E touch /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-install
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		30A807509B0C83DFECB9A521 /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-configure */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-patch","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/tmp/sfml-populate-cfgcmd.txt"			);
+			name = "Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-configure";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-configure"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-build
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E echo_append
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E touch /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-configure
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4CD8DC26B9198EE970A6B844 /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-mkdir */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-mkdir";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-mkdir"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -Dcfgdir=/Debug -P /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/tmp/sfml-populate-mkdirs.cmake
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E touch /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-mkdir
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		4D065694B6D03C2EE7058A10 /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-configure"			);
+			name = "Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-build";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-build"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-build
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E echo_append
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E touch /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-build
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		717FFDE30F739552B4097F61 /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-patch */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-update","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch-info.txt"			);
+			name = "Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-patch";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-patch"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E echo_append
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E touch /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-patch
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9BCCB05330B1637F9A8F2A83 /* Generate CMakeFiles/Debug/sfml-populate-complete */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-build","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-configure","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-download","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-install","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-mkdir","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-patch","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-test","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-update"			);
+			name = "Generate CMakeFiles/Debug/sfml-populate-complete";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeFiles/Debug/sfml-populate-complete"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E make_directory /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeFiles/Debug
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E touch /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeFiles/Debug/sfml-populate-complete
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E touch /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-done
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		DB75E712E37F6FAE3D39C73D /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-download */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-mkdir","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-gitinfo.txt"			);
+			name = "Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-download";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-download"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -P /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/tmp/sfml-populate-gitclone.cmake
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E touch /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-download
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		DBB91C5BD663ED3C2B16630A /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		E076002A4560F5B739A3A757 /* Generate CMakeFiles/sfml-populate */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeFiles/Debug/sfml-populate-complete"			);
+			name = "Generate CMakeFiles/sfml-populate";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeFiles/sfml-populate"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		ECFABDB909A10F90080D6000 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		FE2D2DD5D63286F3FDB7BB31 /* Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-update */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-download","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update-info.txt","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/tmp/sfml-populate-gitupdate.cmake"			);
+			name = "Generate sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-update";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/Debug/sfml-populate-update"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-src
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -Dcan_fetch=YES -P /Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/sfml-populate-prefix/tmp/sfml-populate-gitupdate.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		841B7D8534EE4B49A3E7946A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC9926F0F695456BBD95FFA9 /* ZERO_CHECK */;
+			targetProxy = 6ED6A666F2154D63AB656C9F /* PBXContainerItemProxy */;
+		};
+		C002E6D6F8E2488F91A0E0A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC9926F0F695456BBD95FFA9 /* ZERO_CHECK */;
+			targetProxy = 2451724AC1B240CBB53752B0 /* PBXContainerItemProxy */;
+		};
+		CF879362AD6E4929997591AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2433620B904A477F9307B7D7 /* sfml-populate */;
+			targetProxy = E4CE48BDA0E648248A44CABF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5812F3216E5946858CDA6744 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SYMROOT = "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/build";
+			};
+			name = Debug;
+		};
+		6BD02BE2C279498AB89EABC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B0C4BB2C6B394A0D8A8724E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "sfml-populate";
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C7B32C69053742929E699A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23F3B2DAE53D49C18E5C1C5A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD02BE2C279498AB89EABC7 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		34663BF4226D40B7819A69E7 /* Build configuration list for PBXAggregateTarget "sfml-populate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C4BB2C6B394A0D8A8724E4 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4943D30C577948B99AC1F029 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B32C69053742929E699A11 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6BA159B520AE4E76A4BBA53A /* Build configuration list for PBXProject "sfml-populate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5812F3216E5946858CDA6744 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21D32AC75D4443C98313EC42 /* Project object */;
+}

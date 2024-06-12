@@ -1,0 +1,1101 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		332388B413904595BA5EE174 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9AE71AAF4A1F40C2A4264F8E /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				47789C39C62B404F88D4E1AF /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		45F7EA71750A4753A9AF7A6C /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6ADDE68F09A94BAF8B45ECB9 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				2760C81CA99849C3BAC486B0 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D81E06569BA4415189C8786B /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7BA93A2790674E7CB286B817 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				46F32FFF954159C15EB1F9B4 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		EF9D983FDCA64284BB6BA781 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5DFCDE4889754FE2A0C52F56 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				A1CC01B6AE2D174F17B062E0 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				09B642EB872C47C493E3F0B6 /* PBXTargetDependency */,
+				BE6DFA9A4F9B4827BDACEB50 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0BC8BDE305B743F2ABD0351B /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui.cpp */ = {isa = PBXBuildFile; fileRef = CC28C647DE124ABEA0E28484 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui.cpp */; };
+		22CAF306DB3A4F30BA41D866 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src/imgui-SFML.cpp */ = {isa = PBXBuildFile; fileRef = 4E470C446D714FC6849B95AA /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src/imgui-SFML.cpp */; };
+		685F61CCC1E74E358A5AB0FD /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_widgets.cpp */ = {isa = PBXBuildFile; fileRef = 60D04718CE3241B7B9D70FB1 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_widgets.cpp */; };
+		883702D31BB849BCBF5A64A7 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_tables.cpp */ = {isa = PBXBuildFile; fileRef = 65ADAE28DDCC4E658CCE5141 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_tables.cpp */; };
+		9533C34619294C289B54BED3 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_draw.cpp */ = {isa = PBXBuildFile; fileRef = BA755C8F08C64EB99A1AF8B2 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_draw.cpp */; };
+		BF034586FA5049CB8641E2E1 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 32F4C8608DF34CE7AD110D5D /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src/CMakeLists.txt */; };
+		F0068402D7DB4B95B04F10F4 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_demo.cpp */ = {isa = PBXBuildFile; fileRef = 81A55C49012C47B7805CEAAE /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_demo.cpp */; };
+		F0FE875B8AC04F1CB309DC54 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/misc/cpp/imgui_stdlib.cpp */ = {isa = PBXBuildFile; fileRef = B2A9E42609B1452F92B34BD5 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/misc/cpp/imgui_stdlib.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		6D00D92B88AA4D0882DA1F5B /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		7E0B06104ED4461B9BDB99A6 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		89FCB360336F43149FEF9238 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		932C96A2A41B44359428EF86 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		7A3DB1E2E0324DDBB1297A24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14D72518A8624CBDA55855F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF9D983FDCA64284BB6BA781;
+			remoteInfo = ALL_BUILD;
+		};
+		B237DDC601AF4FFE93DB8A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14D72518A8624CBDA55855F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D81E06569BA4415189C8786B;
+			remoteInfo = ZERO_CHECK;
+		};
+		E8481AF945D84006939C92A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14D72518A8624CBDA55855F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D81E06569BA4415189C8786B;
+			remoteInfo = ZERO_CHECK;
+		};
+		F3C94DE5B0854DDA88A7F08E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14D72518A8624CBDA55855F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D23EA804EDB4B369C663324;
+			remoteInfo = "ImGui-SFML";
+		};
+		FF2B7F8382D341B9A1D8B964 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14D72518A8624CBDA55855F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF9D983FDCA64284BB6BA781;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		306FB604FE59408C9E7311DB /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		32F4C8608DF34CE7AD110D5D /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4E470C446D714FC6849B95AA /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src/imgui-SFML.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "imgui-SFML.cpp"; path = "imgui-SFML.cpp"; sourceTree = SOURCE_ROOT; };
+		60D04718CE3241B7B9D70FB1 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_widgets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_widgets.cpp; path = "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_widgets.cpp"; sourceTree = "<absolute>"; };
+		65ADAE28DDCC4E658CCE5141 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_tables.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_tables.cpp; path = "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_tables.cpp"; sourceTree = "<absolute>"; };
+		81A55C49012C47B7805CEAAE /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_demo.cpp; path = "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_demo.cpp"; sourceTree = "<absolute>"; };
+		B2A9E42609B1452F92B34BD5 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/misc/cpp/imgui_stdlib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_stdlib.cpp; path = "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/misc/cpp/imgui_stdlib.cpp"; sourceTree = "<absolute>"; };
+		BA755C8F08C64EB99A1AF8B2 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_draw.cpp; path = "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_draw.cpp"; sourceTree = "<absolute>"; };
+		CAD599E1920C4D1DB8F36982 /* ImGui-SFML */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libImGui-SFML.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC28C647DE124ABEA0E28484 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui.cpp; path = "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui.cpp"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5556ED2184D24789B8F0A874 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FDAEA26385242EE8A9AF066 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2F2EF3DE2A7343FD8649740A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E470C446D714FC6849B95AA /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src/imgui-SFML.cpp */,
+				CC28C647DE124ABEA0E28484 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui.cpp */,
+				81A55C49012C47B7805CEAAE /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_demo.cpp */,
+				BA755C8F08C64EB99A1AF8B2 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_draw.cpp */,
+				65ADAE28DDCC4E658CCE5141 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_tables.cpp */,
+				60D04718CE3241B7B9D70FB1 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_widgets.cpp */,
+				B2A9E42609B1452F92B34BD5 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/misc/cpp/imgui_stdlib.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3B62E84912D143BD946D6B7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		530CAFD785BF440CA42F592F /* ImGui-SFML */ = {
+			isa = PBXGroup;
+			children = (
+				2F2EF3DE2A7343FD8649740A /* Source Files */,
+				32F4C8608DF34CE7AD110D5D /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src/CMakeLists.txt */,
+			);
+			name = "ImGui-SFML";
+			sourceTree = "<group>";
+		};
+		5BE109DD832F4E3E846C529B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				1FDAEA26385242EE8A9AF066 /* CMake Rules */,
+				306FB604FE59408C9E7311DB /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		A76C0F236C4742B1A6533FB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAD599E1920C4D1DB8F36982 /* ImGui-SFML */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2E494BDDD95495FAB7B44F0 = {
+			isa = PBXGroup;
+			children = (
+				530CAFD785BF440CA42F592F /* ImGui-SFML */,
+				5BE109DD832F4E3E846C529B /* ALL_BUILD */,
+				A76C0F236C4742B1A6533FB7 /* Products */,
+				3B62E84912D143BD946D6B7E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D23EA804EDB4B369C663324 /* ImGui-SFML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3CD5EE7CB0D4D059E27A117 /* Build configuration list for PBXNativeTarget "ImGui-SFML" */;
+			buildPhases = (
+				6F4C94135DA54225974E4A84 /* Sources */,
+				5556ED2184D24789B8F0A874 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DB2F3AB73A547FF92AC4954 /* PBXTargetDependency */,
+			);
+			name = "ImGui-SFML";
+			productName = "ImGui-SFML";
+			productReference = CAD599E1920C4D1DB8F36982 /* ImGui-SFML */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14D72518A8624CBDA55855F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+			};
+			buildConfigurationList = 98C7E50634134DFC9520455C /* Build configuration list for PBXProject "imgui_sfml" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				932C96A2A41B44359428EF86 /* Debug */,
+				89FCB360336F43149FEF9238 /* Release */,
+				7E0B06104ED4461B9BDB99A6 /* MinSizeRel */,
+				6D00D92B88AA4D0882DA1F5B /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = C2E494BDDD95495FAB7B44F0;
+			projectDirPath = "../imgui-sfml-src";
+			projectRoot = "";
+			targets = (
+				EF9D983FDCA64284BB6BA781 /* ALL_BUILD */,
+				5D23EA804EDB4B369C663324 /* ImGui-SFML */,
+				D81E06569BA4415189C8786B /* ZERO_CHECK */,
+				45F7EA71750A4753A9AF7A6C /* install */,
+				332388B413904595BA5EE174 /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		46F32FFF954159C15EB1F9B4 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  make -f /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  make -f /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  make -f /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  make -f /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A1CC01B6AE2D174F17B062E0 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F4C94135DA54225974E4A84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CAF306DB3A4F30BA41D866 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src/imgui-SFML.cpp */,
+				0BC8BDE305B743F2ABD0351B /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui.cpp */,
+				F0068402D7DB4B95B04F10F4 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_demo.cpp */,
+				9533C34619294C289B54BED3 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_draw.cpp */,
+				883702D31BB849BCBF5A64A7 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_tables.cpp */,
+				685F61CCC1E74E358A5AB0FD /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/imgui_widgets.cpp */,
+				F0FE875B8AC04F1CB309DC54 /* /Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src/misc/cpp/imgui_stdlib.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09B642EB872C47C493E3F0B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D23EA804EDB4B369C663324 /* ImGui-SFML */;
+			targetProxy = F3C94DE5B0854DDA88A7F08E /* PBXContainerItemProxy */;
+		};
+		0DB2F3AB73A547FF92AC4954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D81E06569BA4415189C8786B /* ZERO_CHECK */;
+			targetProxy = B237DDC601AF4FFE93DB8A2C /* PBXContainerItemProxy */;
+		};
+		2760C81CA99849C3BAC486B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF9D983FDCA64284BB6BA781 /* ALL_BUILD */;
+			targetProxy = 7A3DB1E2E0324DDBB1297A24 /* PBXContainerItemProxy */;
+		};
+		47789C39C62B404F88D4E1AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF9D983FDCA64284BB6BA781 /* ALL_BUILD */;
+			targetProxy = FF2B7F8382D341B9A1D8B964 /* PBXContainerItemProxy */;
+		};
+		BE6DFA9A4F9B4827BDACEB50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D81E06569BA4415189C8786B /* ZERO_CHECK */;
+			targetProxy = E8481AF945D84006939C92A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0042ACA92CBE48438CCE4AD0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		05A27A05543240BA89268309 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		07FA3055476E485DAF7CFF18 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/kam/stuff/gamedev/axolotls/xcode/build;
+			};
+			name = MinSizeRel;
+		};
+		1E087FB7A9D4429ABC8D30C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		1E0DCB689B304AEEA2EF20C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks,"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-src/extlibs/libs-osx/Frameworks","$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'IMGUI_USER_CONFIG=\"imconfig-SFML.h\"'",SFML_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-src/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "ImGui-SFML";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/kam/stuff/gamedev/axolotls/xcode/build/ImGui-SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		250DB143926C4D5387F6684E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks,"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-src/extlibs/libs-osx/Frameworks","$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'IMGUI_USER_CONFIG=\"imconfig-SFML.h\"'",SFML_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-src/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "ImGui-SFML";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/kam/stuff/gamedev/axolotls/xcode/build/ImGui-SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		25F5FBE027B04865B057404F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SYMROOT = /Users/kam/stuff/gamedev/axolotls/xcode/build;
+			};
+			name = Debug;
+		};
+		3E6DA790E11D4E878BCD8605 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5FF4B59570AB4C6A8B6A6D34 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6BABC90ABC60462EA985878F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks,"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-src/extlibs/libs-osx/Frameworks","$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'IMGUI_USER_CONFIG=\"imconfig-SFML.h\"'",SFML_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-src/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "ImGui-SFML";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/kam/stuff/gamedev/axolotls/xcode/build/ImGui-SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6C4A1559A56342AFB91241E0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-build/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks,"/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-src/extlibs/libs-osx/Frameworks","$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'IMGUI_USER_CONFIG=\"imconfig-SFML.h\"'",SFML_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-src","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-sfml-src","/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-src/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "ImGui-SFML";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/kam/stuff/gamedev/axolotls/xcode/build/ImGui-SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6E4F0379CBFF4CB480F9390A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		7B3D4E0CC578475492F6FAC9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7FA4075E1F3948B5AEF566F7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		81B16F693C324A2699162C9C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		82FC4D3067DC40E9AD72A514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8E2302BCEF3D42E0B1C31A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/kam/stuff/gamedev/axolotls/xcode/build;
+			};
+			name = Release;
+		};
+		9CAE19FDBE9F47058798A404 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AC1F1ECF160A49B3BFC48410 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/kam/stuff/gamedev/axolotls/xcode/build;
+			};
+			name = RelWithDebInfo;
+		};
+		AC545684459A43538EECF939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		DF6748F147AE429593F91737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E2712310516849C4913ED2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		EA09802F388D4DCC9561D3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		EED4D65659A04D42807EF61F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DFCDE4889754FE2A0C52F56 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E087FB7A9D4429ABC8D30C2 /* Debug */,
+				DF6748F147AE429593F91737 /* Release */,
+				81B16F693C324A2699162C9C /* MinSizeRel */,
+				0042ACA92CBE48438CCE4AD0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6ADDE68F09A94BAF8B45ECB9 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2712310516849C4913ED2C9 /* Debug */,
+				6E4F0379CBFF4CB480F9390A /* Release */,
+				5FF4B59570AB4C6A8B6A6D34 /* MinSizeRel */,
+				9CAE19FDBE9F47058798A404 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7BA93A2790674E7CB286B817 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82FC4D3067DC40E9AD72A514 /* Debug */,
+				AC545684459A43538EECF939 /* Release */,
+				7B3D4E0CC578475492F6FAC9 /* MinSizeRel */,
+				05A27A05543240BA89268309 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		98C7E50634134DFC9520455C /* Build configuration list for PBXProject "imgui_sfml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25F5FBE027B04865B057404F /* Debug */,
+				8E2302BCEF3D42E0B1C31A5F /* Release */,
+				07FA3055476E485DAF7CFF18 /* MinSizeRel */,
+				AC1F1ECF160A49B3BFC48410 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9AE71AAF4A1F40C2A4264F8E /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA09802F388D4DCC9561D3F3 /* Debug */,
+				EED4D65659A04D42807EF61F /* Release */,
+				7FA4075E1F3948B5AEF566F7 /* MinSizeRel */,
+				3E6DA790E11D4E878BCD8605 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3CD5EE7CB0D4D059E27A117 /* Build configuration list for PBXNativeTarget "ImGui-SFML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0DCB689B304AEEA2EF20C0 /* Debug */,
+				250DB143926C4D5387F6684E /* Release */,
+				6BABC90ABC60462EA985878F /* MinSizeRel */,
+				6C4A1559A56342AFB91241E0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14D72518A8624CBDA55855F5 /* Project object */;
+}

@@ -1,0 +1,3 @@
+/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeFiles/sfml-populate.dir
+/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeFiles/ALL_BUILD.dir
+/Users/kam/stuff/gamedev/axolotls/xcode/_deps/sfml-subbuild/CMakeFiles/ZERO_CHECK.dir

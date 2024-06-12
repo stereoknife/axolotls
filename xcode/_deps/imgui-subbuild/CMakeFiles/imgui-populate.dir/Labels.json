@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-subbuild/CMakeFiles/imgui-populate"
+		},
+		{
+			"file" : "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-subbuild/CMakeFiles/imgui-populate.rule"
+		},
+		{
+			"file" : "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-subbuild/CMakeFiles/(CONFIG)/imgui-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-subbuild/imgui-populate-prefix/src/imgui-populate-stamp/(CONFIG)/imgui-populate-build.rule"
+		},
+		{
+			"file" : "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-subbuild/imgui-populate-prefix/src/imgui-populate-stamp/(CONFIG)/imgui-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-subbuild/imgui-populate-prefix/src/imgui-populate-stamp/(CONFIG)/imgui-populate-download.rule"
+		},
+		{
+			"file" : "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-subbuild/imgui-populate-prefix/src/imgui-populate-stamp/(CONFIG)/imgui-populate-install.rule"
+		},
+		{
+			"file" : "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-subbuild/imgui-populate-prefix/src/imgui-populate-stamp/(CONFIG)/imgui-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-subbuild/imgui-populate-prefix/src/imgui-populate-stamp/(CONFIG)/imgui-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-subbuild/imgui-populate-prefix/src/imgui-populate-stamp/(CONFIG)/imgui-populate-test.rule"
+		},
+		{
+			"file" : "/Users/kam/stuff/gamedev/axolotls/xcode/_deps/imgui-subbuild/imgui-populate-prefix/src/imgui-populate-stamp/(CONFIG)/imgui-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"imgui-populate"
+		],
+		"name" : "imgui-populate"
+	}
+}
