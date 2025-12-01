@@ -23,9 +23,13 @@ FetchContent_Declare(ImGui-SFML
     GIT_TAG 2.6.x)
 FetchContent_MakeAvailable(ImGui-SFML)
 
-add_executable(main src/main.cpp)
-target_link_libraries(main PRIVATE sfml-graphics ImGui-SFML::ImGui-SFML)
-target_compile_features(main PRIVATE cxx_std_17)
+set(SA2K_FILES src/Game.cpp
+        src/ResourceManager.cpp
+        src/ResourceManager.h)
+
+add_executable(sa2k src/main.cpp ${SA2K_FILES})
+target_link_libraries(sa2k PRIVATE sfml-graphics ImGui-SFML::ImGui-SFML)
+target_compile_features(sa2k PRIVATE cxx_std_17)
 
 if(WIN32)
     add_custom_command(
